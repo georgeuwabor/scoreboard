@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b4a41;
+    position: relative;
+    width: 575px;
+    height: 385px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 0 32px;
+    overflow: hidden;
+}
+
+.home-section, .guest-section {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: relative;
+}
+
+.box {
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px #00000055;
+    border: 2px solid #222;
+}
+
+h3 {
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #00000044;
+}
+
+.home-points-text, .guest-points-text {
+    color: #F94F6D;
+    font-family: 'Cursed Timer ULiL', monospace;
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 2px 8px #00000044;
+}
+
+.add-points-btns-home, .add-points-btns-guest {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.plus-one-point, .plus-two-point, .plus-three-point {
+    width: 43px;
+    height: 43px;
+    background: #1B244A;
+    border-radius: 4px;
+    border: 2px solid #9AABD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9AABD8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.plus-one-point:hover, .plus-two-point:hover, .plus-three-point:hover {
+    background: #F94F6D;
+    color: #fff;
+    border-color: #F94F6D;
+}
+
+.plus-one-point-text, .plus-two-point-text, .plus-three-point-text {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 98vw;
+        height: auto;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .home-section, .guest-section {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
